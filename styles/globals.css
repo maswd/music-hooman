@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+:root {
+  --primary: #166ae8;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #444;
+  background: #f2f2f2;
+  text-align: right ;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  /* min-width: 960px; */
+  /* margin: 0 auto; */
+}
+
+/* navbar */
+nav {
+  background-color: #B5B5B5;
+  /* margin: 15px auto 10px; */
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-2{
+  background-color: #fff;
+}
+
+nav h1 {
+  margin-left: auto;
+  font-size: 1.7rem;
+  color:var(--primary);
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+nav h1 span{
+  color: #444;
+}
+nav ul {
+  margin-right: auto;
+  list-style-type: none;
+  padding: 0;
+  
+  
+}
+nav li {
+  display: inline-block;
+  /* margin-left: 16px; */
+}
+nav li.btn {
+  padding: 10px 16px;
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+}
+nav li.btn:hover {
+  color: white;
+  background: var(--primary);
+}
+.shoping{
+  color: var(--primary);
+  padding-bottom: .7rem;
+}
+.shoping img{
+color: #166ae8;
+}
+
+nav a{
+  padding: .5rem;
+}
+/* banner */
+.banner img {
+  border-radius: 6px;
+  margin: 0 auto;
+}
+.banner{
+  display: flex;
+  justify-content: center;
+}
