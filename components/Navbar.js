@@ -1,29 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useContext } from "react";
-import AuthContext from "../stores/authContext"
+import AuthContext from "../stores/authContext";
 export default function Navbar() {
-  const user = useContext(AuthContext);
-  console.log(user)
+  const { user, login } = useContext(AuthContext);
+  console.log(user);
   return (
     <div className="container">
       <nav>
         <div className="icon">
           <ul>
-            <li>
-              <Link href="/login">
-                <a> ورود به حساب </a>
-              </Link>
+            <li onClick={login} className="btn">
+              ورود به حساب
             </li>
           </ul>
-          <div className="shoping">
+          {/* <div className="shoping ">
             <Link href="/#">
               <a>
                 <Image src="/shopping-cart.png" width={20} height={20} /> سبد
                 خرید{" "}
               </a>
             </Link>
-          </div>
+          </div> */}
         </div>
         <a href="">
           <Image src="/user-svgrepo-com (2).svg" width={50} height={50} />
@@ -38,12 +36,12 @@ export default function Navbar() {
         <ul>
           <li>
             <Link href="/">
-              <a>Home</a>
+              <a>خانه</a>
             </Link>
           </li>
           <li>
             <Link href="/guides">
-              <a>Guides</a>
+              <a>چخبر</a>
             </Link>
           </li>
         </ul>

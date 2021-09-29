@@ -25,7 +25,7 @@ a {
 nav {
   background-color: #B5B5B5;
   /* margin: 15px auto 10px; */
-  padding: 0 1rem;
+  padding: 0 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,16 +63,18 @@ nav li {
 }
 nav li.btn {
   padding: 10px 16px;
-  border: 2px solid var(--primary);
-  border-radius: 30px;
+  /* border: 2px solid #fff; */
+  /* background:#fff; */
+  border-radius: 5px;
   font-weight: bold;
-  color: var(--primary);
+  color:  #444;
   cursor: pointer;
 
 }
 nav li.btn:hover {
-  color: white;
-  background: var(--primary);
+  color:#fff;
+  
+
 }
 .shoping{
   color: var(--primary);
