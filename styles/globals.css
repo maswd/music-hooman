@@ -46,13 +46,17 @@ nav h1 {
 nav h1 span{
   color: #444;
 }
+.nav-2 ul {
+  margin-left: auto;
+}
 nav ul {
-  margin-right: auto;
+  margin-left: auto;
   list-style-type: none;
   padding: 0;
   
   
 }
+
 nav li {
   display: inline-block;
   /* margin-left: 16px; */
@@ -80,6 +84,9 @@ color: #166ae8;
 
 nav a{
   padding: .5rem;
+}
+.label{
+  cursor: pointer;
 }
 /* banner */
 .banner img {
